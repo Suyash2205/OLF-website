@@ -30,47 +30,75 @@
 
   <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="badge">Admissions Open 2026-27</p>
-          <h1 class="hero-title">Building confident learners for a bright future.</h1>
-          <p class="hero-copy">OLF High School offers a balanced learning environment with academic excellence, active learning, strong values, and continuous parent communication.</p>
-          <div class="actions hero-cta">
-            <a class="btn btn-primary" href="admissions.html">Apply Now</a>
-            <a class="btn btn-secondary" href="academics.html">Explore Academics</a>
+      <div class="hero-banner-bleed">
+        <div class="hero-banner" id="heroBanner">
+          <div class="hero-slide active">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1800&q=80" alt="School building">
           </div>
-        </div>
-        <div class="hero-media premium-hero-media">
-          <div class="hero-image-frame">
-            <img class="hero-image" src="assets/images/logo.png" alt="OLF High School visual">
-            <div class="hero-image-overlay">
-              <p class="hero-image-kicker">Campus Visual</p>
-              <h3>Warm, Safe, Learning-Focused Environment</h3>
-              <p>Add a real school/campus photo here for final production.</p>
-            </div>
+          <div class="hero-slide">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1800&q=80" alt="Students learning in classroom">
           </div>
+          <div class="hero-slide">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1800&q=80" alt="Students with books">
+          </div>
+          <div class="hero-slide">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1800&q=80" alt="School library interior">
+          </div>
+          <div class="hero-slide">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1800&q=80" alt="Students group activity">
+          </div>
+          <div class="hero-slide">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=1800&q=80" alt="Teacher guiding students">
+          </div>
+          <div class="hero-banner-overlay"></div>
+          <button class="hero-nav hero-prev" id="heroPrev" aria-label="Previous slide">‹</button>
+          <button class="hero-nav hero-next" id="heroNext" aria-label="Next slide">›</button>
+          <div class="hero-dots" id="heroDots" aria-label="Hero slide navigation"></div>
         </div>
       </div>
-      <div class="container trust-row">
-        <div>Experienced Faculty</div>
-        <div>Holistic Learning</div>
-        <div>Safe Campus</div>
-        <div>Parent Communication</div>
+
+      <div class="container">
+        <div class="hero-content-grid">
+          <div class="hero-content hero-content-below">
+            <p class="badge">Admissions Open 2026-27</p>
+            <h1 class="hero-title">Building confident learners for a bright future.</h1>
+            <p class="hero-copy">OLF High School offers a balanced learning environment with academic excellence, active learning, strong values, and continuous parent communication.</p>
+            <div class="actions hero-cta">
+              <a class="btn btn-primary" href="admissions.html">Apply Now</a>
+              <a class="btn btn-secondary" href="academics.html">Explore Academics</a>
+            </div>
+          </div>
+          <aside class="video-block hero-video-block">
+            <p class="eyebrow">Explore School</p>
+            <h3>School Tour / Video Preview</h3>
+            <a class="video-thumb-link" href="https://www.youtube.com/watch?v=6PfSdaETeNQ" target="_blank" rel="noopener noreferrer" aria-label="Watch school tour video on YouTube">
+              <img src="https://img.youtube.com/vi/6PfSdaETeNQ/hqdefault.jpg" alt="School tour video thumbnail" width="480" height="360" loading="lazy" decoding="async">
+              <span class="video-thumb-play" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </a>
+            <a class="btn btn-text" href="https://www.youtube.com/watch?v=6PfSdaETeNQ" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+          </aside>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">About Us</p>
-          <h2>An academic foundation with values and care.</h2>
+      <div class="container split about-split">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">About Us</p>
+            <h2>An academic foundation with values and care.</h2>
+          </div>
+          <p class="section-copy">OLF High School combines disciplined learning with modern teaching methods. We focus on conceptual clarity, confident communication, and character development so every child grows in both academics and life skills.</p>
         </div>
-        <p class="section-copy">OLF High School combines disciplined learning with modern teaching methods. We focus on conceptual clarity, confident communication, and character development so every child grows in both academics and life skills.</p>
+        <div class="side-image-block">About Us Image Area</div>
       </div>
     </section>
 
     <section class="section section-soft">
-      <div class="container">
+      <div class="container split principal-split">
+        <div class="side-image-block">Principal Section Image Area</div>
         <div class="principal-message">
           <p class="eyebrow">Principal's Message</p>
           <p>"At OLF, we believe every child deserves focused guidance, a safe learning environment, and opportunities to discover their full potential. We welcome families to grow with us."</p>
@@ -118,10 +146,10 @@
           </ul>
         </article>
         <article class="video-block">
-          <p class="eyebrow">Explore School</p>
-          <h3>School Tour / Video Preview</h3>
-          <div class="video-placeholder">Video Preview Area</div>
-          <a class="btn btn-text" href="https://www.youtube.com/@OLFSchool" target="_blank" rel="noreferrer">Watch on YouTube</a>
+          <p class="eyebrow">Campus Gallery</p>
+          <h3>Image Preview Area</h3>
+          <div class="image-placeholder">Image Preview Area</div>
+          <a class="btn btn-text" href="gallery.html">View Image Gallery</a>
         </article>
       </div>
     </section>

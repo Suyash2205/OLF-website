@@ -76,3 +76,59 @@ if (filterButtons.length && galleryItems.length) {
     });
   });
 }
+
+const heroBanner = document.getElementById("heroBanner");
+const heroSlides = document.querySelectorAll(".hero-slide");
+const heroPrev = document.getElementById("heroPrev");
+const heroNext = document.getElementById("heroNext");
+const heroDotsWrap = document.getElementById("heroDots");
+
+if (heroBanner && heroSlides.length > 1) {
+  let currentSlide = 0;
+  let isPaused = false;
+  let autoTimer = null;
+  const dots = [];
+
+  function goToSlide(index) {
+    heroSlides[currentSlide].classList.remove("active");
+    dots[currentSlide].classList.remove("active");
+    currentSlide = (index + heroSlides.length) % heroSlides.length;
+    heroSlides[currentSlide].classList.add("active");
+    dots[currentSlide].classList.add("active");
+  }
+
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    goToSlide(currentSlide - 1);
+  }
+
+  function startAutoRotate() {
+    if (autoTimer) clearInterval(autoTimer);
+    autoTimer = setInterval(() => {
+      if (!isPaused) nextSlide();
+    }, 3500);
+  }
+
+  heroSlides.forEach((_, index) => {
+    const dot = document.createElement("button");
+    dot.className = `hero-dot${index === 0 ? " active" : ""}`;
+    dot.type = "button";
+    dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
+    dot.addEventListener("click", () => goToSlide(index));
+    heroDotsWrap.appendChild(dot);
+    dots.push(dot);
+  });
+
+  if (heroNext) heroNext.addEventListener("click", nextSlide);
+  if (heroPrev) heroPrev.addEventListener("click", prevSlide);
+
+  heroBanner.addEventListener("mouseenter", () => { isPaused = true; });
+  heroBanner.addEventListener("mouseleave", () => { isPaused = false; });
+  heroBanner.addEventListener("focusin", () => { isPaused = true; });
+  heroBanner.addEventListener("focusout", () => { isPaused = false; });
+
+  startAutoRotate();
+}
