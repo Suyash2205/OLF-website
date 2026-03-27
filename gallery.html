@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | OLF High School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/images/logo.png" alt="OLF High School logo">
+        <span class="brand-text">OLF High School</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">Menu</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Gallery</p>
+        <h1>School life through moments and milestones.</h1>
+      </div>
+      <p class="section-copy">Browse pictures from campus, labs, activities, events, and sports. Real photos can be added in this same layout anytime.</p>
+      <div class="filter-row">
+        <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="campus" type="button">Campus</button>
+        <button class="filter-btn" data-filter="labs" type="button">Labs</button>
+        <button class="filter-btn" data-filter="activities" type="button">Activities</button>
+        <button class="filter-btn" data-filter="events" type="button">Events</button>
+        <button class="filter-btn" data-filter="sports" type="button">Sports</button>
+      </div>
+      <div class="gallery-grid">
+        <article class="photo-card" data-category="campus">
+          <div class="photo-card__media">
+            <img class="photo-card__img" src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&q=80" alt="Main campus building at OLF High School" loading="lazy" width="900" height="600">
+            <div class="photo-card__gradient" aria-hidden="true"></div>
+            <div class="photo-card__overlay">
+              <span class="photo-card__label">Campus</span>
+              <h3 class="photo-card__title">Main Campus</h3>
+            </div>
+          </div>
+        </article>
+        <article class="photo-card" data-category="labs">
+          <div class="photo-card__media">
+            <img class="photo-card__img" src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=900&q=80" alt="Science laboratory" loading="lazy" width="900" height="600">
+            <div class="photo-card__gradient" aria-hidden="true"></div>
+            <div class="photo-card__overlay">
+              <span class="photo-card__label">Labs</span>
+              <h3 class="photo-card__title">Science Lab</h3>
+            </div>
+          </div>
+        </article>
+        <article class="photo-card" data-category="activities">
+          <div class="photo-card__media">
+            <img class="photo-card__img" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80" alt="Students in class activity" loading="lazy" width="900" height="600">
+            <div class="photo-card__gradient" aria-hidden="true"></div>
+            <div class="photo-card__overlay">
+              <span class="photo-card__label">Activities</span>
+              <h3 class="photo-card__title">Class Activity</h3>
+            </div>
+          </div>
+        </article>
+        <article class="photo-card" data-category="events">
+          <div class="photo-card__media">
+            <img class="photo-card__img" src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900&q=80" alt="School event celebration" loading="lazy" width="900" height="600">
+            <div class="photo-card__gradient" aria-hidden="true"></div>
+            <div class="photo-card__overlay">
+              <span class="photo-card__label">Events</span>
+              <h3 class="photo-card__title">Annual Event</h3>
+            </div>
+          </div>
+        </article>
+        <article class="photo-card" data-category="sports">
+          <div class="photo-card__media">
+            <img class="photo-card__img" src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=900&q=80" alt="Sports day on the field" loading="lazy" width="900" height="600">
+            <div class="photo-card__gradient" aria-hidden="true"></div>
+            <div class="photo-card__overlay">
+              <span class="photo-card__label">Sports</span>
+              <h3 class="photo-card__title">Sports Day</h3>
+            </div>
+          </div>
+        </article>
+        <article class="photo-card" data-category="campus">
+          <div class="photo-card__media">
+            <img class="photo-card__img" src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=900&q=80" alt="School library" loading="lazy" width="900" height="600">
+            <div class="photo-card__gradient" aria-hidden="true"></div>
+            <div class="photo-card__overlay">
+              <span class="photo-card__label">Campus</span>
+              <h3 class="photo-card__title">Library Block</h3>
+            </div>
+          </div>
+        </article>
+      </div>
+      <section class="video-feature">
+        <p class="eyebrow">Featured</p>
+        <h2>School Tour Video</h2>
+        <p>Watch a quick walkthrough of classrooms, labs, and student activity spaces.</p>
+        <a class="btn btn-primary" href="https://www.youtube.com/@OLFSchool" target="_blank" rel="noreferrer">Watch School Tour</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">OLF High School</p>
+        <p>Miraroad, Thane, Mira Bhayandar, Maharashtra 401107</p>
+      </div>
+      <div>
+        <p class="footer-title">Quick Links</p>
+        <p><a href="index.html">Home</a> · <a href="academics.html">Academics</a> · <a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Mon-Sat, 8:00 AM - 3:00 PM<br>info@olfhighschool.edu</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 OLF High School. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics | OLF High School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/images/logo.png" alt="OLF High School logo">
+        <span class="brand-text">OLF High School</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">Menu</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a class="active" href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Academics</p>
+        <h1>Academic Resource Center</h1>
+      </div>
+      <p class="section-copy">Find section-wise curriculum documents and common resources in one place. Documents are updated section-wise by the school administration.</p>
+
+      <section class="resource-center" id="pdf-center">
+        <div class="hub-layout">
+          <aside class="hub-intro">
+            <h2>Resource Hub</h2>
+            <p>Select class section and access key academic documents from a single space.</p>
+            <label for="sectionSelect">Select Section</label>
+            <select id="sectionSelect">
+              <option value="nursery">Nursery</option>
+              <option value="primary">Primary (Class 1-5)</option>
+              <option value="middle">Middle (Class 6-8)</option>
+              <option value="secondary">Secondary (Class 9-10)</option>
+            </select>
+          </aside>
+          <div class="resource-list">
+            <article class="resource-item">
+              <span class="resource-icon">📘</span>
+              <div>
+                <h3>Curriculum Kit</h3>
+                <p>Section-wise curriculum framework.</p>
+              </div>
+              <a id="curriculumLink" class="btn btn-secondary" href="#">Download</a>
+            </article>
+            <article class="resource-item">
+              <span class="resource-icon">📝</span>
+              <div>
+                <h3>Homework</h3>
+                <p>Weekly and monthly homework sheets.</p>
+              </div>
+              <a id="homeworkLink" class="btn btn-secondary" href="#">Download</a>
+            </article>
+            <article class="resource-item">
+              <span class="resource-icon">📅</span>
+              <div>
+                <h3>Exam Dates</h3>
+                <p>Assessment and exam schedules.</p>
+              </div>
+              <a id="examLink" class="btn btn-secondary" href="#">Download</a>
+            </article>
+            <article class="resource-item">
+              <span class="resource-icon">📚</span>
+              <div>
+                <h3>Syllabus</h3>
+                <p>Detailed syllabus by section.</p>
+              </div>
+              <a id="syllabusLink" class="btn btn-secondary" href="#">Download</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sub" id="holiday-list">
+        <div class="section-head">
+          <p class="eyebrow">Common Resource</p>
+          <h2>Holiday List</h2>
+        </div>
+        <p class="section-copy">One common holiday list for all sections.</p>
+        <a class="btn btn-primary" href="assets/pdfs/sample-holiday-list.pdf" target="_blank" rel="noreferrer">Download Holiday List PDF</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">OLF High School</p>
+        <p>Miraroad, Thane, Mira Bhayandar, Maharashtra 401107</p>
+      </div>
+      <div>
+        <p class="footer-title">Quick Links</p>
+        <p><a href="index.html">Home</a> · <a href="admissions.html">Admissions</a> · <a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Mon-Sat, 8:00 AM - 3:00 PM<br>info@olfhighschool.edu</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 OLF High School. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
